@@ -1,0 +1,17 @@
+type User @model @auth(rules:[
+                        {allow:owner, operations:[read,update]}
+                      ])
+{
+  id:ID!
+  displayName:String!
+  email:String!
+  owner:String
+  friends:[UserFriend] @connection(keyName: "byFriend", fields: ["id"])
+}
+
+type UserFriend @model @key(name: "byFriend", fields: ["userID"]){
+  id:ID!
+  userID:ID!
+  friendID:ID!
+  user:[User] @connection(fields: ["userID"])
+}

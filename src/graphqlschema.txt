@@ -1,0 +1,19 @@
+type User @model{
+  id:ID!
+  displayName:String!
+  email:String!
+  friends:[UserFriend] @connection(keyName: "byFriend", fields: ["id"])
+}
+
+type UserFriend @model @key(name: "byFriend", fields: ["userID"]){
+  id:ID!
+  userID:ID!
+  friendID:ID!
+  user:[User] @connection(fields: ["userID"])
+}
+
+google:
+125820501485-5tcp5esiveh4s05qe9mrqcm3mspcnq44.apps.googleusercontent.com
+-x-jW4R8nC7xeFIqM-TUUFgc
+
+FaceBook:

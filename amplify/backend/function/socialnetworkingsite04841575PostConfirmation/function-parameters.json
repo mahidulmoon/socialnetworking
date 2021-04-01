@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "socialnetworkingsite04841575",
+  "functionName": "socialnetworkingsite04841575PostConfirmation",
+  "resourceName": "socialnetworkingsite04841575PostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "C:\\Users\\Rajesh\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "socialnetworkingsite04841575PostConfirmation",
+  "skipEdit": true,
+  "enableCors": false
+}
